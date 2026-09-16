@@ -31,7 +31,7 @@
         </p>
         <p>
           Find the list of weeks bellow. Cant decide which one to look at first? No worries!
-          Click <a href"javascript:randomWeek()">HERE</a> to be taken to a random week!
+          Click  <a href="week-1.html" id="random-week">HERE</a> to be taken to a random week!
         </p>
         <ul>
           <li><a href="week-1.html">Week 1 - Stars - Proxima Centauri</a></li>
@@ -46,15 +46,18 @@
     My Astronomy Project
   </footer>
 
-  <script>
-  function randomWeek() {
-    const weeks= [
-      "week-1.html"
-      "week-2.html"
-  ];
-    const randomNumber=Math.floor(Math.random() * weeks.length);
-    window.location.href = weeks[randomNumber];
-  }
+<script>
+    const weeks = [
+        "week-1.html"
+    ];
+
+    document.getElementById("random-week").addEventListener("click", function(event) {
+        event.preventDefault();
+
+        const randomNumber = Math.floor(Math.random() * weeks.length);
+
+        window.location.href = weeks[randomNumber];
+    });
 </script>
   
 </body>
