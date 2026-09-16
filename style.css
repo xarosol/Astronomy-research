@@ -55,6 +55,12 @@ section {
     border-radius: 12px;
 }
 
+section h3 {
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
 h2 {
     font-size: 30px;
     margin-top: 0;
